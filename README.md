@@ -1,59 +1,55 @@
-# AIwts.com — Enterprise AI API Gateway
+# Cheap GPT API · ChatGPT 90% OFF · Discount Claude API · 1折 GPT Open AI大模型
 
-> **90% OFF Official Pricing** · 50+ AI Models · OpenAI-Compatible API
+> **The Cheapest GPT API Online** — ChatGPT · Claude · Gemini at **90% OFF** Official Pricing. 50+ AI Models, One API Key.
 
-[![Website](https://img.shields.io/badge/Website-aiwts.com-blue)](https://www.aiwts.com)
+[![Website](https://img.shields.io/badge/Website-AIwts.com-blue)](https://www.aiwts.com)
 [![API](https://img.shields.io/badge/API-api.aiwts.com-green)](https://api.aiwts.com)
-[![Docs](https://img.shields.io/badge/Docs-docs.aiwts.com-orange)](https://docs.aiwts.com)
-[![Status](https://img.shields.io/badge/Status-Operational-brightgreen)](https://www.aiwts.com)
+[![Status](https://img.shields.io/badge/Status-All_Models_Online-brightgreen)](https://www.aiwts.com)
+[![Pricing](https://img.shields.io/badge/Pricing-90%25_OFF-red)](https://www.aiwts.com)
 
-AIwts.com is a high-performance AI API gateway that provides enterprise-grade access to the world's leading large language models. One API key, one OpenAI-compatible endpoint, all the models you need — at **90% OFF** official pricing.
+## 💸 Why Pay Full Price?
 
-## Why AIwts?
+| | Official Price | AIwts | You Save |
+|---|:---:|:---:|:---:|
+| **ChatGPT API** (GPT-4.1) | $15.00/M tokens | ~$1.50/M tokens | **90%** |
+| **Claude API** (Opus 4) | $15.00/M tokens | ~$1.50/M tokens | **90%** |
+| **Gemini API** (2.5 Pro) | $10.00/M tokens | ~$1.00/M tokens | **90%** |
+| **GPT-5.1** | Premium pricing | ~$3.00/M tokens | **90%** |
 
-| Feature | Details |
-|---------|---------|
-| **Models** | 50+ cutting-edge models from OpenAI, Anthropic, Google, DeepSeek, Meta & more |
-| **Pricing** | Up to 90% OFF compared to official API pricing |
-| **Compatibility** | 100% OpenAI API compatible — just swap `base_url` |
-| **Latency** | Global multi-node deployment, average response under 80ms |
-| **Reliability** | 99.9% uptime SLA with automatic failover |
-| **Support** | 24/7 technical support |
+> All prices approximate. Exact rates depend on model and token type. **All ~90% OFF official pricing.**
 
-## Supported Models
+## 🔥 What You Get
 
-- **OpenAI**: GPT-5.1, GPT-4.1, o4-mini, GPT-4.1-mini
-- **Anthropic**: Claude Opus 4, Claude Sonnet 4, Claude Haiku 3.5
-- **Google**: Gemini 2.5 Pro, Gemini 2.5 Flash
-- **DeepSeek**: DeepSeek-V4, DeepSeek-R1
-- **Alibaba**: Qwen 3.7 Max
-- **Meta**: Llama 4 Maverick
-- **Mistral**: Mistral Large 3
-- And many more...
+- **ChatGPT API at 90% OFF** — GPT-5.1, GPT-4.1, o4-mini, GPT-4.1-mini
+- **Discount Claude API** — Claude Opus 4, Claude Sonnet 4, Claude Haiku 3.5
+- **Cheap Gemini API** — Gemini 2.5 Pro, Gemini 2.5 Flash
+- **Plus 40+ more** — DeepSeek V4, Qwen 3.7, Mistral Large 3, Llama 4 Maverick
+- **OpenAI Compatible** — One `base_url` change, zero code migration
+- **99.9% Uptime SLA** — Enterprise infrastructure, auto-failover
 
-## Quick Start
+## 🚀 Quick Start
 
 ```python
 from openai import OpenAI
 
-# Just change base_url
+# Swap the base_url — save 90%
 client = OpenAI(
     api_key="sk-your-aiwts-key",
     base_url="https://api.aiwts.com/v1"
 )
 
+# GPT, Claude, Gemini — all work
 response = client.chat.completions.create(
-    model="gpt-4.1",
-    messages=[{"role": "user", "content": "Hello, AI!"}]
+    model="gpt-4.1",  # or "claude-sonnet-4", "gemini-2.5-pro"
+    messages=[{"role": "user", "content": "Hello, world!"}]
 )
-
 print(response.choices[0].message.content)
 ```
 
 ```javascript
 import OpenAI from 'openai';
 
-// Just change baseURL
+// Change one line — save 90% on every request
 const client = new OpenAI({
     apiKey: 'sk-your-aiwts-key',
     baseURL: 'https://api.aiwts.com/v1'
@@ -61,7 +57,7 @@ const client = new OpenAI({
 
 const res = await client.chat.completions.create({
     model: 'gpt-4.1',
-    messages: [{ role: 'user', content: 'Hello, AI!' }]
+    messages: [{ role: 'user', content: 'Hello!' }]
 });
 
 console.log(res.choices[0].message.content);
@@ -73,25 +69,41 @@ curl https://api.aiwts.com/v1/chat/completions \
   -H "Authorization: Bearer sk-your-aiwts-key" \
   -d '{
     "model": "gpt-4.1",
-    "messages": [{"role": "user", "content": "Hello, AI!"}]
+    "messages": [{"role": "user", "content": "Hello, cheapest GPT API!"}]
   }'
 ```
 
-## Pricing
+## 📦 Supported Models
 
-| Tier | Price | Features |
-|------|-------|----------|
-| **Free** | $0 | Daily quota, basic models, community support |
-| **Pro** | Pay-as-you-go | Full model access, 90% OFF, no limits, priority support |
-| **Enterprise** | Custom | Dedicated deployment, on-premise, SLA, custom features |
+### Cheap GPT / ChatGPT API (OpenAI)
+- `gpt-5.1` — Latest flagship
+- `gpt-4.1` — Best for complex tasks
+- `gpt-4.1-mini` — Fast & cost-effective
+- `o4-mini` — Reasoning specialist
 
-## Links
+### Discount Claude API (Anthropic)
+- `claude-opus-4` — Maximum intelligence
+- `claude-sonnet-4` — Speed + quality
+- `claude-haiku-3.5` — Budget-friendly
+
+### Cheap Gemini API (Google)
+- `gemini-2.5-pro` — Top performance
+- `gemini-2.5-flash` — Lightning fast
+
+### More Discount Models
+- `deepseek-v4` · `deepseek-r1`
+- `qwen3.7-max`
+- `mistral-large-3`
+- `llama-4-maverick`
+- And 40+ more
+
+## 🔗 Links
 
 - **Website**: [www.aiwts.com](https://www.aiwts.com)
 - **API Endpoint**: `https://api.aiwts.com/v1`
 - **Documentation**: [docs.aiwts.com](https://docs.aiwts.com)
-- **Business Contact**: [business@aiwts.com](mailto:business@aiwts.com)
+- **Contact**: [business@aiwts.com](mailto:business@aiwts.com)
 
 ---
 
-&copy; 2024 AIwts.com — Enterprise AI API Gateway
+&copy; 2024 AIwts.com — The Cheapest GPT API · ChatGPT 90% OFF · Discount Claude API · 1折 GPT 大模型
