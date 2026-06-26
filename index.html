@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIwts · Enterprise AI API Gateway</title>
+<meta name="description" content="AIwts.com - Enterprise AI API Gateway. 90% OFF official pricing. Access 50+ top AI models including GPT-4.1, Claude Opus 4, Gemini 2.5 Pro via a single OpenAI-compatible API.">
+<meta name="keywords" content="AI API gateway, OpenAI API proxy, cheap GPT API, Claude API, Gemini API, AIwts, AI model aggregation, 1折GPT, AI中转站">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.aiwts.com/">
+<meta property="og:title" content="AIwts · Enterprise AI API Gateway — 90% OFF">
+<meta property="og:description" content="Access 50+ top AI models at 90% OFF. One API key, OpenAI-compatible. Enterprise-grade stability.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.aiwts.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --0:#f8f9fc;
+  --1:#eef0f5;
+  --2:#dde1ea;
+  --3:#c1c7d4;
+  --4:#8b93a5;
+  --5:#5a6378;
+  --6:#3a4255;
+  --7:#1f2837;
+  --8:#0f1319;
+  --b:#3b7fff;
+  --b2:#5c9aff;
+  --bg:#eef0ff;
+  --bbg:#f4f7ff;
+  --g:#10b981;
+  --gbg:#ecfdf5;
+  --r:#f43f5e;
+  --rbg:#fff1f2;
+  --h:'Outfit',sans-serif;
+  --s:'Geist',sans-serif;
+}
+html{scroll-behavior:smooth}
+body{background:var(--0);color:var(--8);font-family:var(--s);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.x{max-width:1080px;margin:0 auto;padding:0 32px}
+
+/* ─── GRID PATTERN BG ─── */
+.hero{position:relative;padding:100px 0 80px;overflow:hidden}
+.hero::before{
+  content:'';position:absolute;inset:0;
+  background-image:
+    linear-gradient(var(--1) 1px,transparent 1px),
+    linear-gradient(90deg,var(--1) 1px,transparent 1px);
+  background-size:60px 60px;
+  opacity:.5;pointer-events:none;
+}
+.hero::after{
+  content:'';position:absolute;
+  top:-40%;right:-10%;width:600px;height:600px;
+  background:radial-gradient(circle,rgba(59,127,255,.08) 0%,transparent 60%);
+  pointer-events:none;
+}
+
+.hero-inner{
+  position:relative;
+  display:grid;grid-template-columns:1fr 320px;gap:80px;align-items:start;
+}
+
+.h-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--gbg);color:var(--g);
+  font-size:13px;font-weight:500;
+  padding:6px 14px 6px 10px;border-radius:100px;
+  margin-bottom:32px;
+}
+.h-dot{width:7px;height:7px;background:var(--g);border-radius:50%;animation:breath 2.5s ease-in-out infinite}
+@keyframes breath{0%,100%{opacity:1}50%{opacity:.3}}
+
+.h-tag{
+  display:inline-block;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--b);background:var(--bg);padding:3px 10px;border-radius:3px;margin-bottom:20px;
+}
+
+.hero h1{
+  font-family:var(--h);font-size:clamp(48px,7vw,76px);font-weight:800;
+  line-height:1.05;letter-spacing:-.03em;margin-bottom:24px;
+}
+.hero h1 .b{color:var(--b)}
+
+.hero-desc{
+  font-size:17px;color:var(--5);line-height:1.7;max-width:48ch;margin-bottom:48px;
+}
+
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+
+.btn{
+  display:inline-flex;align-items:center;
+  text-decoration:none;font-size:15px;font-weight:600;
+  padding:13px 28px;border-radius:6px;transition:all .2s;cursor:pointer;border:none;
+}
+.btn-b{background:var(--b);color:#fff;box-shadow:0 0 0 1px var(--b),0 4px 16px rgba(59,127,255,.25)}
+.btn-b:hover{background:var(--b2);box-shadow:0 0 0 1px var(--b2),0 6px 24px rgba(59,127,255,.3)}
+.btn-g{background:transparent;color:var(--5);border:1px solid var(--2)}
+.btn-g:hover{color:var(--8);border-color:var(--3);background:var(--1)}
+
+/* ─── Side metrics ─── */
+.metrics{
+  position:relative;
+  background:#fff;border:1px solid var(--2);border-radius:12px;
+  padding:6px 24px;
+  box-shadow:0 1px 3px rgba(0,0,0,.04);
+}
+
+.m-row{
+  padding:22px 0;border-bottom:1px solid var(--2);
+  display:flex;align-items:baseline;justify-content:space-between;
+}
+.m-row:last-child{border-bottom:none}
+
+.m-v{font-family:var(--h);font-size:30px;font-weight:700;color:var(--8);letter-spacing:-.02em;line-height:1}
+.m-l{font-size:12px;color:var(--4);text-align:right;line-height:1.4;max-width:80px}
+
+.m-status{
+  display:flex;align-items:center;gap:6px;
+  font-size:12px;color:var(--g);padding:12px 0 6px;
+}
+
+/* ─── RIBBON ─── */
+.ribbon{
+  padding:24px 0;border-top:1px solid var(--2);border-bottom:1px solid var(--2);background:#fff;
+}
+.ribbon-row{display:flex;align-items:center;justify-content:center;gap:0}
+.r-name{
+  font-family:var(--h);font-size:15px;font-weight:600;color:var(--4);
+  padding:8px 28px;transition:color .15s;
+}
+.r-name:hover{color:var(--8)}
+.r-sep{width:1px;height:20px;background:var(--2)}
+
+/* ─── Section ─── */
+.sec{padding:80px 0;border-bottom:1px solid var(--2)}
+.sec-head{display:flex;gap:60px;align-items:flex-start;margin-bottom:52px}
+.sec-n{
+  font-family:var(--h);font-size:12px;font-weight:700;color:var(--b);
+  letter-spacing:.14em;text-transform:uppercase;padding-top:8px;flex-shrink:0;
+}
+.sec-t{
+  font-family:var(--h);font-size:clamp(28px,3.8vw,40px);font-weight:700;
+  letter-spacing:-.02em;line-height:1.15;color:var(--8);
+}
+.sec-t .b{color:var(--b)}
+
+/* ─── Features ─── */
+.f-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:16px;
+}
+.f-card{
+  background:#fff;border:1px solid var(--2);border-radius:12px;
+  padding:28px;transition:all .2s;position:relative;overflow:hidden;
+}
+.f-card::after{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:var(--b);opacity:0;transition:opacity .2s;
+}
+.f-card:hover{border-color:var(--b);box-shadow:0 4px 20px rgba(59,127,255,.08)}
+.f-card:hover::after{opacity:1}
+
+.f-lbl{
+  font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--b);background:var(--bbg);padding:2px 8px;border-radius:3px;
+  display:inline-block;margin-bottom:16px;
+}
+.f-title{font-family:var(--h);font-size:18px;font-weight:600;color:var(--8);margin-bottom:8px}
+.f-body{font-size:14px;color:var(--5);line-height:1.65}
+
+/* ─── Models ─── */
+.m-layout{display:grid;grid-template-columns:240px 1fr;gap:64px;align-items:start}
+.m-side p{font-size:14px;color:var(--5);line-height:1.7;margin-top:16px}
+
+.tbl{width:100%;border-collapse:collapse}
+.tbl thead tr{border-bottom:2px solid var(--8)}
+.tbl th{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--4);text-align:left;padding:0 0 10px 0}
+.tbl th:last-child{text-align:right}
+.tbl tbody tr{border-bottom:1px solid var(--2);transition:background .12s}
+.tbl tbody tr:hover{background:var(--bbg)}
+.tbl tbody tr:last-child{border-bottom:none}
+.tbl td{padding:13px 0;font-size:14px}
+.tbl-m{font-family:'Geist Mono','Courier New',monospace;font-size:13px;color:var(--8)}
+.tbl-p{font-size:12px;color:var(--4)}
+.tbl-b{font-size:11px;font-weight:600;padding:3px 10px;border-radius:4px;display:inline-block;float:right}
+.bh{background:var(--rbg);color:var(--r)}
+.bf{background:var(--gbg);color:var(--g)}
+.bn{background:var(--bg);color:var(--b)}
+
+/* ─── Code ─── */
+.c-layout{display:grid;grid-template-columns:240px 1fr;gap:64px;align-items:start}
+.c-side h2{font-family:var(--h);font-size:30px;font-weight:700;line-height:1.2;margin-bottom:16px}
+.c-side h2 .b{color:var(--b)}
+.c-side p{font-size:14px;color:var(--5);line-height:1.65}
+
+.c-box{background:#0c0e14;border-radius:10px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.2)}
+.c-bar{display:flex;align-items:center;gap:6px;padding:10px 14px;border-bottom:1px solid rgba(255,255,255,.06)}
+.c-d{width:10px;height:10px;border-radius:50%}
+.c-d1{background:#ff5f57}.c-d2{background:#febc2e}.c-d3{background:#28c840}
+.c-fn{font-size:12px;color:rgba(255,255,255,.2);margin-left:8px;font-family:monospace}
+.c-tabs{display:flex;padding:0 14px;border-bottom:1px solid rgba(255,255,255,.06)}
+.ct{
+  font-family:var(--s);font-size:12px;color:rgba(255,255,255,.3);
+  padding:9px 12px;cursor:pointer;border:none;background:none;
+  border-bottom:2px solid transparent;transition:all .15s;
+}
+.ct:hover{color:rgba(255,255,255,.5)}
+.ct.on{color:#fff;border-bottom-color:var(--b2)}
+
+pre{padding:18px 14px;font-family:'Geist Mono','Courier New',monospace;font-size:13px;line-height:1.85;color:#a9b8d6;overflow-x:auto}
+.kw{color:#bb9af7}.st{color:#9ece6a}.cm{color:rgba(255,255,255,.18)}.fn{color:#7aa2f7}.nm{color:#ff9e64}.ky{color:#89ddff}.op{color:rgba(255,255,255,.4)}
+
+/* ─── Pricing ─── */
+.p-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.p-card{
+  background:#fff;border:1px solid var(--2);border-radius:12px;padding:36px 28px;
+  position:relative;transition:all .2s;
+}
+.p-card.dark{background:var(--8);color:var(--0);border-color:transparent}
+.p-card.dark:hover{box-shadow:0 8px 32px rgba(15,19,25,.3)}
+
+.p-card:hover{border-color:var(--b);box-shadow:0 4px 20px rgba(59,127,255,.08)}
+
+.p-type{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--4);margin-bottom:24px}
+.p-card.dark .p-type{color:rgba(255,255,255,.3)}
+
+.p-price{font-family:var(--h);font-size:40px;font-weight:700;letter-spacing:-.02em;margin-bottom:6px}
+.p-card.dark .p-price{color:#fff}
+
+.p-note{font-size:13px;color:var(--4);margin-bottom:24px}
+.p-card.dark .p-note{color:rgba(255,255,255,.3)}
+
+.p-hr{height:1px;background:var(--2);margin-bottom:24px}
+.p-card.dark .p-hr{background:rgba(255,255,255,.08)}
+
+.p-ul{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+.p-ul li{font-size:14px;color:var(--5);display:flex;gap:8px}
+.p-card.dark .p-ul li{color:rgba(255,255,255,.5)}
+.p-ul li::before{content:'';width:5px;height:5px;background:var(--b);border-radius:50%;flex-shrink:0;margin-top:6px}
+.p-card.dark .p-ul li::before{background:var(--b2)}
+
+.p-btn{
+  display:block;text-align:center;font-size:14px;font-weight:600;
+  padding:12px;border-radius:6px;text-decoration:none;transition:all .2s;cursor:pointer;border:none;
+}
+.p-out{background:transparent;border:1px solid var(--2);color:var(--8)}
+.p-out:hover{border-color:var(--8)}
+.p-w{background:#fff;color:var(--8)}
+.p-w:hover{background:var(--1)}
+
+/* ─── CTA ─── */
+.end{padding:88px 0 100px;position:relative;overflow:hidden}
+.end::before{
+  content:'';position:absolute;inset:0;
+  background-image:linear-gradient(var(--1) 1px,transparent 1px),linear-gradient(90deg,var(--1) 1px,transparent 1px);
+  background-size:60px 60px;opacity:.35;pointer-events:none;
+}
+.end::after{
+  content:'';position:absolute;top:-200px;left:30%;width:500px;height:500px;
+  background:radial-gradient(circle,rgba(59,127,255,.1) 0%,transparent 60%);pointer-events:none;
+}
+
+.end-grid{
+  position:relative;display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:center;
+}
+
+.end-left h2{font-family:var(--h);font-size:clamp(36px,5vw,52px);font-weight:800;letter-spacing:-.02em;line-height:1.08;margin-bottom:24px}
+.end-left h2 .b{color:var(--b)}
+.end-left p{font-size:16px;color:var(--5);line-height:1.7;margin-bottom:40px;max-width:42ch}
+
+.end-right{display:flex;flex-direction:column;gap:14px}
+.e-card{padding:18px 22px;background:#fff;border:1px solid var(--2);border-radius:8px}
+.e-lbl{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--4);margin-bottom:4px}
+.e-val{font-size:15px;font-weight:500;color:var(--8)}
+
+/* ─── Footer ─── */
+footer{padding:24px 0;border-top:1px solid var(--2)}
+.ft{display:flex;align-items:center;justify-content:space-between}
+.ft-brand{font-family:var(--h);font-size:18px;font-weight:700;color:var(--8)}
+.ft-brand .b{color:var(--b)}
+.ft-copy{font-size:13px;color:var(--4)}
+
+/* ─── Responsive ─── */
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr;gap:48px}
+  .f-grid{grid-template-columns:1fr 1fr}
+  .m-layout,.c-layout{grid-template-columns:1fr}
+  .p-grid{grid-template-columns:1fr}
+  .end-grid{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .x{padding:0 20px}
+  .hero{padding:72px 0 56px}
+  .hero h1{font-size:40px}
+  .f-grid{grid-template-columns:1fr}
+  .sec{padding:56px 0}
+  .sec-head{gap:20px;flex-direction:column}
+  .ribbon-row{flex-wrap:wrap;justify-content:center}
+  .r-sep{display:none}
+}
+
+/* ─── Vis ─── */
+.v{opacity:0;transform:translateY(10px);transition:all .5s cubic-bezier(.16,1,.3,1)}
+.v.on{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+
+<!-- ─── HERO ─── -->
+<section class="hero">
+  <div class="x">
+    <div class="hero-inner">
+      <div>
+        <div class="h-badge">
+          <span class="h-dot"></span>
+          All Systems Operational &middot; 99.9% Uptime
+        </div>
+        <div class="h-tag">AI API Gateway</div>
+        <h1>Enterprise<br><span class="b">AI Gateway</span></h1>
+        <p class="hero-desc">
+          AIwts.com provides high-stability, low-latency AI API gateway services for enterprises and developers. Access the world's latest large language models through a single OpenAI-compatible API. 90% OFF official pricing.
+        </p>
+        <div class="hero-btns">
+          <a href="https://www.aiwts.com" class="btn btn-b">Get Started Free</a>
+          <a href="https://docs.aiwts.com" class="btn btn-g">Documentation</a>
+        </div>
+      </div>
+
+      <div class="metrics">
+        <div class="m-row">
+          <div class="m-v">50+</div>
+          <div class="m-l">Models Available</div>
+        </div>
+        <div class="m-row">
+          <div class="m-v">&lt;80ms</div>
+          <div class="m-l">Avg Latency</div>
+        </div>
+        <div class="m-row">
+          <div class="m-v">99.9%</div>
+          <div class="m-l">Uptime SLA</div>
+        </div>
+        <div class="m-row">
+          <div class="m-v">24/7</div>
+          <div class="m-l">Support</div>
+        </div>
+        <div class="m-status">
+          <span class="h-dot" style="width:5px;height:5px"></span>
+          All Nodes Healthy
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── RIBBON ─── -->
+<div class="ribbon">
+  <div class="x">
+    <div class="ribbon-row">
+      <span class="r-name">OpenAI</span>
+      <span class="r-sep"></span>
+      <span class="r-name">Anthropic</span>
+      <span class="r-sep"></span>
+      <span class="r-name">Google</span>
+      <span class="r-sep"></span>
+      <span class="r-name">DeepSeek</span>
+      <span class="r-sep"></span>
+      <span class="r-name">Qwen</span>
+      <span class="r-sep"></span>
+      <span class="r-name">Mistral</span>
+    </div>
+  </div>
+</div>
+
+<!-- ─── FEATURES ─── -->
+<section class="sec v" id="features">
+  <div class="x">
+    <div class="sec-head">
+      <span class="sec-n">01</span>
+      <h2 class="sec-t">AI Infrastructure Built for <span class="b">Enterprise</span></h2>
+    </div>
+    <div class="f-grid">
+      <div class="f-card">
+        <div class="f-lbl">Protocol Compatible</div>
+        <h3 class="f-title">Full OpenAI API Compatibility</h3>
+        <p class="f-body">Just swap the base URL. Supports Chat Completions, Embeddings, Functions, and all endpoints. Zero migration effort.</p>
+      </div>
+      <div class="f-card">
+        <div class="f-lbl">Smart Routing</div>
+        <h3 class="f-title">Global Low-Latency Network</h3>
+        <p class="f-body">Multi-node deployment with automatic optimal path selection. Elastic scaling during peak loads. Average response under 80ms.</p>
+      </div>
+      <div class="f-card">
+        <div class="f-lbl">Failover</div>
+        <h3 class="f-title">Automatic Failover, Zero Downtime</h3>
+        <p class="f-body">Automatic node failover, multi-key round-robin scheduling, smooth high-concurrency handling. 24/7 stable operation.</p>
+      </div>
+      <div class="f-card">
+        <div class="f-lbl">Security</div>
+        <h3 class="f-title">Enterprise-Grade Security</h3>
+        <p class="f-body">End-to-end HTTPS encryption, API Key isolation, fine-grained access control. Meets compliance requirements.</p>
+      </div>
+      <div class="f-card">
+        <div class="f-lbl">Monitoring</div>
+        <h3 class="f-title">Full Usage Transparency</h3>
+        <p class="f-body">Per-call logs, token usage dashboard, cost visualization. Complete visibility into your AI usage.</p>
+      </div>
+      <div class="f-card">
+        <div class="f-lbl">Pay-as-you-go</div>
+        <h3 class="f-title">Transparent Pricing, 90% OFF</h3>
+        <p class="f-body">No monthly fees, no commitments. Pay only for what you use. Up to 90% OFF compared to official pricing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── MODELS ─── -->
+<section class="sec v" id="models">
+  <div class="x">
+    <div class="m-layout">
+      <div class="m-side">
+        <span class="sec-n">02</span>
+        <h2 class="sec-t" style="font-size:clamp(26px,3.4vw,36px)">Access the Latest <span class="b">LLMs</span></h2>
+        <p>We track new model releases and make them available immediately. One API key for the world's top AI models.</p>
+      </div>
+
+      <table class="tbl">
+        <thead><tr><th>Model</th><th>Provider</th><th></th></tr></thead>
+        <tbody>
+          <tr><td class="tbl-m">gpt-4.1</td><td class="tbl-p">OpenAI</td><td><span class="tbl-b bh">Hot</span></td></tr>
+          <tr><td class="tbl-m">gpt-5.1</td><td class="tbl-p">OpenAI</td><td><span class="tbl-b bn">New</span></td></tr>
+          <tr><td class="tbl-m">o4-mini</td><td class="tbl-p">OpenAI</td><td><span class="tbl-b bf">Fast</span></td></tr>
+          <tr><td class="tbl-m">claude-opus-4</td><td class="tbl-p">Anthropic</td><td><span class="tbl-b bh">Hot</span></td></tr>
+          <tr><td class="tbl-m">claude-sonnet-4</td><td class="tbl-p">Anthropic</td><td><span class="tbl-b bf">Fast</span></td></tr>
+          <tr><td class="tbl-m">gemini-2.5-pro</td><td class="tbl-p">Google</td><td><span class="tbl-b bh">Hot</span></td></tr>
+          <tr><td class="tbl-m">gemini-2.5-flash</td><td class="tbl-p">Google</td><td><span class="tbl-b bf">Fast</span></td></tr>
+          <tr><td class="tbl-m">deepseek-v4</td><td class="tbl-p">DeepSeek</td><td><span class="tbl-b bn">New</span></td></tr>
+          <tr><td class="tbl-m">deepseek-r1</td><td class="tbl-p">DeepSeek</td><td><span class="tbl-b bh">Reasoning</span></td></tr>
+          <tr><td class="tbl-m">qwen3.7-max</td><td class="tbl-p">Alibaba</td><td><span class="tbl-b bn">New</span></td></tr>
+          <tr><td class="tbl-m">mistral-large-3</td><td class="tbl-p">Mistral</td><td><span class="tbl-b bn">New</span></td></tr>
+          <tr><td class="tbl-m">llama-4-maverick</td><td class="tbl-p">Meta</td><td><span class="tbl-b bf">Open Source</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CODE ─── -->
+<section class="sec v" id="docs">
+  <div class="x">
+    <div class="c-layout">
+      <div class="c-side">
+        <span class="sec-n">03</span>
+        <h2><span class="b">3 Lines of Code</span><br>to Get Started</h2>
+        <p>Fully compatible with OpenAI SDK. Just change the base_url. Zero learning curve.</p>
+      </div>
+
+      <div class="c-box">
+        <div class="c-bar">
+          <span class="c-d c-d1"></span><span class="c-d c-d2"></span><span class="c-d c-d3"></span>
+          <span class="c-fn">quickstart.py</span>
+        </div>
+        <div class="c-tabs">
+          <button class="ct on" data-l="py">Python</button>
+          <button class="ct" data-l="js">Node.js</button>
+          <button class="ct" data-l="curl">cURL</button>
+        </div>
+        <pre id="cp"><span class="kw">from</span> openai <span class="kw">import</span> <span class="fn">OpenAI</span>
+
+<span class="cm"># Just change base_url</span>
+client <span class="op">=</span> <span class="fn">OpenAI</span>(
+    api_key<span class="op">=</span><span class="st">"sk-your-aiwts-key"</span>,
+    base_url<span class="op">=</span><span class="st">"https://api.aiwts.com/v1"</span>
+)
+
+response <span class="op">=</span> client.chat.completions.<span class="fn">create</span>(
+    model<span class="op">=</span><span class="st">"gpt-4.1"</span>,
+    messages<span class="op">=</span>[{<span class="st">"role"</span><span class="op">:</span> <span class="st">"user"</span>, <span class="st">"content"</span><span class="op">:</span> <span class="st">"Hello"</span>}]
+)
+
+<span class="fn">print</span>(response.choices[<span class="nm">0</span>].message.content)</pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PRICING ─── -->
+<section class="sec v" id="pricing">
+  <div class="x">
+    <div class="sec-head">
+      <span class="sec-n">04</span>
+      <h2 class="sec-t">Transparent <span class="b">Pay-as-you-go</span> Pricing</h2>
+    </div>
+
+    <div class="p-grid">
+      <div class="p-card">
+        <div class="p-type">Free Tier</div>
+        <div class="p-price">Free</div>
+        <div class="p-note">Sign up to start</div>
+        <div class="p-hr"></div>
+        <ul class="p-ul">
+          <li>Daily usage quota</li>
+          <li>GPT-4.1 mini / Llama models</li>
+          <li>Basic usage stats</li>
+          <li>Community support</li>
+        </ul>
+        <a href="https://www.aiwts.com" class="p-btn p-out">Sign Up Free</a>
+      </div>
+
+      <div class="p-card dark">
+        <div class="p-type">Pro</div>
+        <div class="p-price">Pay-as-you-go</div>
+        <div class="p-note">No monthly fees &middot; 90% OFF</div>
+        <div class="p-hr"></div>
+        <ul class="p-ul">
+          <li>Full model access</li>
+          <li>No concurrency limits</li>
+          <li>Real-time logs & monitoring</li>
+          <li>Multi-key management</li>
+          <li>Priority support</li>
+          <li>VAT invoices available</li>
+        </ul>
+        <a href="https://www.aiwts.com" class="p-btn p-w">Get Started</a>
+      </div>
+
+      <div class="p-card">
+        <div class="p-type">Enterprise</div>
+        <div class="p-price">Custom</div>
+        <div class="p-note">Contact sales</div>
+        <div class="p-hr"></div>
+        <ul class="p-ul">
+          <li>Dedicated cluster deployment</li>
+          <li>On-premise data storage</li>
+          <li>SLA guarantee</li>
+          <li>Custom feature development</li>
+          <li>Dedicated account manager</li>
+        </ul>
+        <a href="mailto:business@aiwts.com" class="p-btn p-out">Contact Sales</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CTA ─── -->
+<section class="end v" id="start">
+  <div class="x">
+    <div class="end-grid">
+      <div class="end-left">
+        <h2>Start Building with <span class="b">AIwts</span> Today</h2>
+        <p>Sign up for free credits. Get set up in 5 minutes. Experience enterprise-grade AI API gateway service at 90% OFF.</p>
+        <div class="hero-btns">
+          <a href="https://www.aiwts.com" class="btn btn-b">Sign Up Free</a>
+          <a href="mailto:business@aiwts.com" class="btn btn-g">Contact Us</a>
+        </div>
+      </div>
+      <div class="end-right">
+        <div class="e-card"><div class="e-lbl">Documentation</div><div class="e-val">docs.aiwts.com</div></div>
+        <div class="e-card"><div class="e-lbl">Business Inquiries</div><div class="e-val">business@aiwts.com</div></div>
+        <div class="e-card"><div class="e-lbl">Technical Support</div><div class="e-val">24/7 Online Support</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="x">
+    <div class="ft">
+      <div class="ft-brand">AI<span class="b">wts</span>.com</div>
+      <div class="ft-copy">&copy; 2024 AIwts.com &middot; Enterprise AI API Gateway</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+const S={
+  py:`<span class="kw">from</span> openai <span class="kw">import</span> <span class="fn">OpenAI</span>\n\n<span class="cm"># Just change base_url</span>\nclient <span class="op">=</span> <span class="fn">OpenAI</span>(\n    api_key<span class="op">=</span><span class="st">"sk-your-aiwts-key"</span>,\n    base_url<span class="op">=</span><span class="st">"https://api.aiwts.com/v1"</span>\n)\n\nresponse <span class="op">=</span> client.chat.completions.<span class="fn">create</span>(\n    model<span class="op">=</span><span class="st">"gpt-4.1"</span>,\n    messages<span class="op">=</span>[{<span class="st">"role"</span><span class="op">:</span> <span class="st">"user"</span>, <span class="st">"content"</span><span class="op">:</span> <span class="st">"Hello"</span>}]\n)\n\n<span class="fn">print</span>(response.choices[<span class="nm">0</span>].message.content)`,
+  js:`<span class="kw">import</span> OpenAI <span class="kw">from</span> <span class="st">'openai'</span>;\n\n<span class="cm">// Just change baseURL</span>\n<span class="kw">const</span> client <span class="op">=</span> <span class="kw">new</span> <span class="fn">OpenAI</span>({\n  apiKey: <span class="st">'sk-your-aiwts-key'</span>,\n  baseURL: <span class="st">'https://api.aiwts.com/v1'</span>\n});\n\n<span class="kw">const</span> res <span class="op">=</span> <span class="kw">await</span> client.chat.completions.<span class="fn">create</span>(\n  { model: <span class="st">'gpt-4.1'</span>,\n    messages: [{ role: <span class="st">'user'</span>, content: <span class="st">'Hello'</span> }] }\n);\n\nconsole.<span class="fn">log</span>(res.choices[<span class="nm">0</span>].message.content);`,
+  curl:`<span class="fn">curl</span> https://api.aiwts.com/v1/chat/completions \\\\\n  <span class="op">-H</span> <span class="st">"Content-Type: application/json"</span> \\\\\n  <span class="op">-H</span> <span class="st">"Authorization: Bearer sk-your-aiwts-key"</span> \\\\\n  <span class="op">-d</span> <span class="st">'{</span>\n    <span class="st">"model": "gpt-4.1"</span>,\n    <span class="st">"messages": [{"role": "user", "content": "Hello"}]</span>\n  <span class="st">}'</span>`
+};
+
+document.querySelectorAll('.ct').forEach(b=>{
+  b.addEventListener('click',()=>{
+    document.querySelectorAll('.ct').forEach(t=>t.classList.remove('on'));
+    b.classList.add('on');
+    document.getElementById('cp').innerHTML=S[b.dataset.l];
+  });
+});
+
+const io=new IntersectionObserver(e=>{
+  e.forEach(el=>{
+    if(el.isIntersecting){el.classList.add('on');io.unobserve(el)}
+  });
+},{threshold:.06});
+document.querySelectorAll('.v').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
