@@ -3,597 +3,558 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AIwts · Enterprise AI API Gateway</title>
-<meta name="description" content="AIwts.com - Enterprise AI API Gateway. 90% OFF official pricing. Access 50+ top AI models including GPT-4.1, Claude Opus 4, Gemini 2.5 Pro via a single OpenAI-compatible API.">
-<meta name="keywords" content="AI API gateway, OpenAI API proxy, cheap GPT API, Claude API, Gemini API, AIwts, AI model aggregation, 1折GPT, AI中转站">
-<meta name="robots" content="index, follow">
+<title>Cheap GPT API · ChatGPT 90% OFF · Discount Claude API · 1折 GPT Open AI大模型 · AIwts</title>
+<meta name="description" content="Cheapest GPT API — 90% OFF official pricing. ChatGPT API, Claude API, Gemini API at 1/10 the cost. One OpenAI-compatible endpoint. 50+ AI models. Instant access.">
+<meta name="keywords" content="cheap GPT API, ChatGPT API 90% off, discount Claude API, cheap AI API, OpenAI API proxy, cheap ChatGPT alternative, 1折 GPT, AI中转站, 便宜的GPT, AI大模型API折扣, cheapest AI API gateway, GPT-4 cheap API">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://www.aiwts.com/">
-<meta property="og:title" content="AIwts · Enterprise AI API Gateway — 90% OFF">
-<meta property="og:description" content="Access 50+ top AI models at 90% OFF. One API key, OpenAI-compatible. Enterprise-grade stability.">
+
+<meta property="og:title" content="Cheap GPT API · ChatGPT 90% OFF · Discount Claude · AIwts">
+<meta property="og:description" content="Cheapest GPT API on the web. ChatGPT, Claude, and Gemini at 90% OFF. 50+ AI models, one API key. Start free.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.aiwts.com/">
+<meta property="og:site_name" content="AIwts.com">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"SoftwareApplication",
+  "name":"AIwts — Cheap GPT API Gateway",
+  "applicationCategory":"DeveloperApplication",
+  "operatingSystem":"Cloud",
+  "description":"Cheap GPT API gateway with 90% OFF ChatGPT, Claude and Gemini API pricing. 50+ AI models via one OpenAI-compatible endpoint.",
+  "offers":{
+    "@type":"Offer",
+    "price":"0",
+    "priceCurrency":"USD",
+    "description":"Free tier available. Pro plan at 90% OFF official pricing."
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question","name":"Why is this GPT API so cheap?",
+      "acceptedAnswer":{"@type":"Answer","text":"AIwts aggregates API access across providers and passes bulk-volume savings to you. We buy model access at enterprise-level volume, which means you get GPT, ChatGPT, and Claude APIs at up to 90% OFF official retail pricing — with the same quality and response speed."}
+    },
+    {
+      "@type":"Question","name":"Is this real ChatGPT and Claude?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes. You get the exact same GPT-4.1, Claude Opus 4, and Gemini 2.5 Pro models. The API is 100% OpenAI-compatible — your existing code works immediately by changing the base URL."}
+    },
+    {
+      "@type":"Question","name":"How does the 90% discount work?",
+      "acceptedAnswer":{"@type":"Answer","text":"AIwts sources AI model API access at enterprise volume pricing. Instead of paying retail rates ($15 per million tokens for GPT-4.1), you pay as little as $1.50 — that's a 90% discount. No markup, no hidden fees, just transparent pay-as-you-go."}
+    },
+    {
+      "@type":"Question","name":"Can I use Claude API at 90% off?",
+      "acceptedAnswer":{"@type":"Answer","text":"Absolutely. Claude Opus 4, Claude Sonnet 4, and Claude Haiku 3.5 are all available through AIwts at a fraction of Anthropic's official pricing. Same models, same quality, dramatically lower cost."}
+    },
+    {
+      "@type":"Question","name":"What ChatGPT models are available with the discount?",
+      "acceptedAnswer":{"@type":"Answer","text":"All of them: GPT-5.1, GPT-4.1, GPT-4.1 mini, o4-mini, and more. Every OpenAI model gets the same 90% OFF through AIwts. Your existing OpenAI SDK code works unchanged."}
+    },
+    {
+      "@type":"Question","name":"Is this cheaper than the official ChatGPT API?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes — AIwts offers ChatGPT and Claude APIs at up to 90% OFF official pricing. For example, GPT-4.1 that costs $15/M tokens officially is available through AIwts at around $1.50/M tokens. You save 90% with zero quality loss."}
+    }
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --0:#f8f9fc;
-  --1:#eef0f5;
-  --2:#dde1ea;
-  --3:#c1c7d4;
-  --4:#8b93a5;
-  --5:#5a6378;
-  --6:#3a4255;
-  --7:#1f2837;
-  --8:#0f1319;
-  --b:#3b7fff;
-  --b2:#5c9aff;
-  --bg:#eef0ff;
-  --bbg:#f4f7ff;
-  --g:#10b981;
-  --gbg:#ecfdf5;
-  --r:#f43f5e;
-  --rbg:#fff1f2;
-  --h:'Outfit',sans-serif;
-  --s:'Geist',sans-serif;
+  --0:#f8f9fc; --1:#eef0f5; --2:#dde1ea; --3:#c1c7d4; --4:#8b93a5;
+  --5:#5a6378; --6:#3a4255; --7:#1f2837; --8:#0f1319;
+  --b:#2563eb; --b-l:#3b82f6; --b-bg:#eff6ff;
+  --g:#10b981; --g-bg:#ecfdf5;
+  --r:#ef4444; --r-bg:#fef2f2;
+  --y:#f59e0b; --y-bg:#fffbeb;
+  --h:'Outfit',sans-serif; --s:'Geist',sans-serif;
 }
 html{scroll-behavior:smooth}
 body{background:var(--0);color:var(--8);font-family:var(--s);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
-.x{max-width:1080px;margin:0 auto;padding:0 32px}
+.x{max-width:1120px;margin:0 auto;padding:0 32px}
 
-/* ─── GRID PATTERN BG ─── */
-.hero{position:relative;padding:100px 0 80px;overflow:hidden}
+/* ─── HERO ─── */
+.hero{position:relative;padding:88px 0 72px;overflow:hidden}
 .hero::before{
   content:'';position:absolute;inset:0;
   background-image:
     linear-gradient(var(--1) 1px,transparent 1px),
     linear-gradient(90deg,var(--1) 1px,transparent 1px);
-  background-size:60px 60px;
-  opacity:.5;pointer-events:none;
+  background-size:48px 48px;opacity:.45;pointer-events:none;
 }
 .hero::after{
   content:'';position:absolute;
-  top:-40%;right:-10%;width:600px;height:600px;
-  background:radial-gradient(circle,rgba(59,127,255,.08) 0%,transparent 60%);
+  top:-30%;right:-8%;width:560px;height:560px;
+  background:radial-gradient(circle,rgba(37,99,235,.07) 0%,transparent 55%);
   pointer-events:none;
 }
-
-.hero-inner{
-  position:relative;
-  display:grid;grid-template-columns:1fr 320px;gap:80px;align-items:start;
-}
+.hero-inner{position:relative;display:grid;grid-template-columns:1fr 320px;gap:72px;align-items:start}
 
 .h-badge{
   display:inline-flex;align-items:center;gap:8px;
-  background:var(--gbg);color:var(--g);
-  font-size:13px;font-weight:500;
-  padding:6px 14px 6px 10px;border-radius:100px;
-  margin-bottom:32px;
+  background:var(--g-bg);color:var(--g);
+  font-size:13px;font-weight:600;padding:6px 16px 6px 10px;border-radius:100px;margin-bottom:28px;
 }
 .h-dot{width:7px;height:7px;background:var(--g);border-radius:50%;animation:breath 2.5s ease-in-out infinite}
 @keyframes breath{0%,100%{opacity:1}50%{opacity:.3}}
 
 .h-tag{
-  display:inline-block;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--b);background:var(--bg);padding:3px 10px;border-radius:3px;margin-bottom:20px;
+  display:inline-flex;gap:6px;font-size:11px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--r);background:var(--r-bg);padding:3px 10px;border-radius:3px;margin-bottom:20px;
 }
+.h-tag-2{color:var(--b);background:var(--b-bg);margin-left:6px}
 
-.hero h1{
-  font-family:var(--h);font-size:clamp(48px,7vw,76px);font-weight:800;
-  line-height:1.05;letter-spacing:-.03em;margin-bottom:24px;
-}
-.hero h1 .b{color:var(--b)}
+.hero h1{font-family:var(--h);font-size:clamp(44px,6.8vw,68px);font-weight:800;line-height:1.06;letter-spacing:-.03em;margin-bottom:12px}
+.hero h1 .accent{color:var(--r);position:relative}
+.hero h1 .accent b{font-weight:inherit}
+.hero h2.sub{font-family:var(--s);font-size:18px;font-weight:400;color:var(--5);line-height:1.6;margin-bottom:20px;max-width:52ch}
+.hero-desc{font-size:16px;color:var(--5);line-height:1.7;max-width:48ch;margin-bottom:40px}
 
-.hero-desc{
-  font-size:17px;color:var(--5);line-height:1.7;max-width:48ch;margin-bottom:48px;
-}
-
-.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
-
-.btn{
-  display:inline-flex;align-items:center;
-  text-decoration:none;font-size:15px;font-weight:600;
-  padding:13px 28px;border-radius:6px;transition:all .2s;cursor:pointer;border:none;
-}
-.btn-b{background:var(--b);color:#fff;box-shadow:0 0 0 1px var(--b),0 4px 16px rgba(59,127,255,.25)}
-.btn-b:hover{background:var(--b2);box-shadow:0 0 0 1px var(--b2),0 6px 24px rgba(59,127,255,.3)}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;text-decoration:none;font-size:15px;font-weight:600;padding:14px 30px;border-radius:8px;transition:all .2s;cursor:pointer;border:none}
+.btn-r{background:var(--r);color:#fff;box-shadow:0 0 0 1px var(--r),0 4px 18px rgba(239,68,68,.22)}
+.btn-r:hover{filter:brightness(1.1);box-shadow:0 0 0 1px var(--r),0 6px 26px rgba(239,68,68,.3)}
+.btn-b{background:var(--b);color:#fff;box-shadow:0 0 0 1px var(--b),0 4px 18px rgba(37,99,235,.22)}
+.btn-b:hover{background:var(--b-l);box-shadow:0 0 0 1px var(--b-l),0 6px 26px rgba(37,99,235,.3)}
 .btn-g{background:transparent;color:var(--5);border:1px solid var(--2)}
 .btn-g:hover{color:var(--8);border-color:var(--3);background:var(--1)}
 
-/* ─── Side metrics ─── */
-.metrics{
-  position:relative;
-  background:#fff;border:1px solid var(--2);border-radius:12px;
-  padding:6px 24px;
-  box-shadow:0 1px 3px rgba(0,0,0,.04);
-}
+/* ─── Side Panel ─── */
+.panel{background:#fff;border:1px solid var(--2);border-radius:14px;padding:6px 24px 20px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.p-row{display:flex;align-items:baseline;justify-content:space-between;padding:20px 0;border-bottom:1px solid var(--2)}
+.p-row:last-child{border-bottom:none}
+.p-v{font-family:var(--h);font-size:28px;font-weight:700;color:var(--8);letter-spacing:-.02em;line-height:1}
+.p-v.sm{font-size:15px;color:var(--r);font-weight:700}
+.p-l{font-size:12px;color:var(--4);text-align:right;line-height:1.4;max-width:90px}
+.p-note{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--r);font-weight:600;padding:10px 0 0;margin-top:6px;border-top:1px dashed var(--2)}
 
-.m-row{
-  padding:22px 0;border-bottom:1px solid var(--2);
-  display:flex;align-items:baseline;justify-content:space-between;
-}
-.m-row:last-child{border-bottom:none}
+/* ─── Provider Bar ─── */
+.ribbon{padding:20px 0;border-top:1px solid var(--2);border-bottom:1px solid var(--2);background:#fff}
+.ribbon-inner{display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap}
+.ribbon-inner span{font-family:var(--h);font-size:14px;font-weight:600;color:var(--4);padding:6px 24px}
+.ribbon-inner .r-hl{color:var(--r);font-weight:700}
 
-.m-v{font-family:var(--h);font-size:30px;font-weight:700;color:var(--8);letter-spacing:-.02em;line-height:1}
-.m-l{font-size:12px;color:var(--4);text-align:right;line-height:1.4;max-width:80px}
-
-.m-status{
-  display:flex;align-items:center;gap:6px;
-  font-size:12px;color:var(--g);padding:12px 0 6px;
-}
-
-/* ─── RIBBON ─── */
-.ribbon{
-  padding:24px 0;border-top:1px solid var(--2);border-bottom:1px solid var(--2);background:#fff;
-}
-.ribbon-row{display:flex;align-items:center;justify-content:center;gap:0}
-.r-name{
-  font-family:var(--h);font-size:15px;font-weight:600;color:var(--4);
-  padding:8px 28px;transition:color .15s;
-}
-.r-name:hover{color:var(--8)}
-.r-sep{width:1px;height:20px;background:var(--2)}
-
-/* ─── Section ─── */
+/* ─── SECTION ─── */
 .sec{padding:80px 0;border-bottom:1px solid var(--2)}
-.sec-head{display:flex;gap:60px;align-items:flex-start;margin-bottom:52px}
-.sec-n{
-  font-family:var(--h);font-size:12px;font-weight:700;color:var(--b);
-  letter-spacing:.14em;text-transform:uppercase;padding-top:8px;flex-shrink:0;
-}
-.sec-t{
-  font-family:var(--h);font-size:clamp(28px,3.8vw,40px);font-weight:700;
-  letter-spacing:-.02em;line-height:1.15;color:var(--8);
-}
-.sec-t .b{color:var(--b)}
+.sec-header{display:flex;gap:48px;align-items:baseline;margin-bottom:52px}
+.sec-n{font-family:var(--h);font-size:12px;font-weight:700;color:var(--b);letter-spacing:.14em;text-transform:uppercase;padding-top:10px;flex-shrink:0}
+.sec-h2{font-family:var(--h);font-size:clamp(28px,3.6vw,38px);font-weight:700;letter-spacing:-.02em;line-height:1.18;color:var(--8)}
+.sec-h2 .hl{color:var(--r)}
 
-/* ─── Features ─── */
-.f-grid{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:16px;
+/* ─── PRICE COMPARISON ─── */
+.p-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.p-card{background:#fff;border:1px solid var(--2);border-radius:14px;padding:32px 24px;position:relative;transition:all .22s}
+.p-card.featured{background:var(--8);color:var(--0);border-color:transparent;box-shadow:0 4px 24px rgba(15,19,25,.12)}
+.p-card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.06)}
+.p-card.featured:hover{box-shadow:0 8px 32px rgba(15,19,25,.22)}
+.p-badge{
+  position:absolute;top:-10px;right:20px;
+  background:var(--r);color:#fff;
+  font-size:11px;font-weight:700;padding:4px 14px;border-radius:100px;
+  letter-spacing:.04em;
 }
-.f-card{
-  background:#fff;border:1px solid var(--2);border-radius:12px;
-  padding:28px;transition:all .2s;position:relative;overflow:hidden;
-}
-.f-card::after{
-  content:'';position:absolute;top:0;left:0;right:0;height:2px;
-  background:var(--b);opacity:0;transition:opacity .2s;
-}
-.f-card:hover{border-color:var(--b);box-shadow:0 4px 20px rgba(59,127,255,.08)}
-.f-card:hover::after{opacity:1}
+.p-name{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--4);margin-bottom:20px}
+.p-card.featured .p-name{color:rgba(255,255,255,.3)}
+.p-price{font-family:var(--h);font-size:36px;font-weight:700;letter-spacing:-.02em;margin-bottom:4px}
+.p-card.featured .p-price{color:#fff}
+.p-desc{font-size:13px;color:var(--4);margin-bottom:20px}
+.p-card.featured .p-desc{color:rgba(255,255,255,.3)}
+.p-line{height:1px;background:var(--2);margin-bottom:20px}
+.p-card.featured .p-line{background:rgba(255,255,255,.08)}
+.p-features{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:28px}
+.p-features li{font-size:14px;color:var(--5);display:flex;gap:8px}
+.p-card.featured .p-features li{color:rgba(255,255,255,.5)}
+.p-features li::before{content:'✓';color:var(--g);font-weight:700;font-size:14px;flex-shrink:0}
+.p-card.featured .p-features li::before{color:var(--g)}
+.p-btn{display:block;text-align:center;font-size:14px;font-weight:600;padding:12px;border-radius:8px;text-decoration:none;transition:all .2s;cursor:pointer;border:none}
+.p-btn-out{background:transparent;border:1px solid var(--2);color:var(--8)}
+.p-btn-out:hover{border-color:var(--8)}
+.p-btn-white{background:#fff;color:var(--8)}
+.p-btn-white:hover{background:var(--1)}
 
-.f-lbl{
-  font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
-  color:var(--b);background:var(--bbg);padding:2px 8px;border-radius:3px;
-  display:inline-block;margin-bottom:16px;
-}
-.f-title{font-family:var(--h);font-size:18px;font-weight:600;color:var(--8);margin-bottom:8px}
+/* ─── MODELS ─── */
+.m-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+@media(max-width:720px){.m-grid{grid-template-columns:1fr}}
+.m-block h3{font-family:var(--h);font-size:20px;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.m-block h3 .ico{font-size:22px}
+.m-row-item{display:flex;align-items:center;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--2);font-size:14px}
+.m-row-item:last-child{border-bottom:none}
+.m-model{font-family:'Geist Mono','Courier New',monospace;font-size:13px;color:var(--8);font-weight:500}
+.m-tag{font-size:10px;font-weight:700;padding:3px 8px;border-radius:4px;text-transform:uppercase}
+.m-tag-hot{background:var(--r-bg);color:var(--r)}
+.m-tag-new{background:var(--b-bg);color:var(--b)}
+.m-tag-fast{background:var(--g-bg);color:var(--g)}
+.m-price{font-family:var(--h);font-size:15px;font-weight:600;color:var(--r);text-align:right}
+.m-price .off{font-size:10px;background:var(--r-bg);padding:2px 6px;border-radius:4px;margin-left:4px}
+
+/* ─── FEATURES ─── */
+.f-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.f-card{background:#fff;border:1px solid var(--2);border-radius:12px;padding:28px 24px;transition:all .2s}
+.f-card:hover{border-color:var(--b);box-shadow:0 4px 18px rgba(37,99,235,.06)}
+.f-icon{font-size:24px;margin-bottom:16px;display:block}
+.f-title{font-family:var(--h);font-size:17px;font-weight:600;color:var(--8);margin-bottom:8px}
 .f-body{font-size:14px;color:var(--5);line-height:1.65}
 
-/* ─── Models ─── */
-.m-layout{display:grid;grid-template-columns:240px 1fr;gap:64px;align-items:start}
-.m-side p{font-size:14px;color:var(--5);line-height:1.7;margin-top:16px}
-
-.tbl{width:100%;border-collapse:collapse}
-.tbl thead tr{border-bottom:2px solid var(--8)}
-.tbl th{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--4);text-align:left;padding:0 0 10px 0}
-.tbl th:last-child{text-align:right}
-.tbl tbody tr{border-bottom:1px solid var(--2);transition:background .12s}
-.tbl tbody tr:hover{background:var(--bbg)}
-.tbl tbody tr:last-child{border-bottom:none}
-.tbl td{padding:13px 0;font-size:14px}
-.tbl-m{font-family:'Geist Mono','Courier New',monospace;font-size:13px;color:var(--8)}
-.tbl-p{font-size:12px;color:var(--4)}
-.tbl-b{font-size:11px;font-weight:600;padding:3px 10px;border-radius:4px;display:inline-block;float:right}
-.bh{background:var(--rbg);color:var(--r)}
-.bf{background:var(--gbg);color:var(--g)}
-.bn{background:var(--bg);color:var(--b)}
-
-/* ─── Code ─── */
-.c-layout{display:grid;grid-template-columns:240px 1fr;gap:64px;align-items:start}
-.c-side h2{font-family:var(--h);font-size:30px;font-weight:700;line-height:1.2;margin-bottom:16px}
-.c-side h2 .b{color:var(--b)}
-.c-side p{font-size:14px;color:var(--5);line-height:1.65}
-
-.c-box{background:#0c0e14;border-radius:10px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.2)}
-.c-bar{display:flex;align-items:center;gap:6px;padding:10px 14px;border-bottom:1px solid rgba(255,255,255,.06)}
+/* ─── CODE ─── */
+.c-box{background:#0b0d13;border-radius:12px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.18)}
+.c-bar{display:flex;align-items:center;gap:6px;padding:10px 16px;border-bottom:1px solid rgba(255,255,255,.06)}
 .c-d{width:10px;height:10px;border-radius:50%}
 .c-d1{background:#ff5f57}.c-d2{background:#febc2e}.c-d3{background:#28c840}
-.c-fn{font-size:12px;color:rgba(255,255,255,.2);margin-left:8px;font-family:monospace}
-.c-tabs{display:flex;padding:0 14px;border-bottom:1px solid rgba(255,255,255,.06)}
-.ct{
-  font-family:var(--s);font-size:12px;color:rgba(255,255,255,.3);
-  padding:9px 12px;cursor:pointer;border:none;background:none;
-  border-bottom:2px solid transparent;transition:all .15s;
-}
+.c-fn{font-size:12px;color:rgba(255,255,255,.18);margin-left:8px;font-family:monospace}
+.c-tabs{display:flex;padding:0 16px;border-bottom:1px solid rgba(255,255,255,.06)}
+.ct{font-family:var(--s);font-size:12px;color:rgba(255,255,255,.28);padding:10px 14px;cursor:pointer;border:none;background:none;border-bottom:2px solid transparent;transition:all .15s}
 .ct:hover{color:rgba(255,255,255,.5)}
-.ct.on{color:#fff;border-bottom-color:var(--b2)}
+.ct.on{color:#fff;border-bottom-color:var(--b-l)}
+pre{padding:20px 16px;font-family:'Geist Mono','Courier New',monospace;font-size:13px;line-height:1.9;color:#a9b8d6;overflow-x:auto}
+.kw{color:#bb9af7}.st{color:#9ece6a}.cm{color:rgba(255,255,255,.16)}.fn{color:#7aa2f7}.nm{color:#ff9e64}.ky{color:#89ddff}.op{color:rgba(255,255,255,.35)}
 
-pre{padding:18px 14px;font-family:'Geist Mono','Courier New',monospace;font-size:13px;line-height:1.85;color:#a9b8d6;overflow-x:auto}
-.kw{color:#bb9af7}.st{color:#9ece6a}.cm{color:rgba(255,255,255,.18)}.fn{color:#7aa2f7}.nm{color:#ff9e64}.ky{color:#89ddff}.op{color:rgba(255,255,255,.4)}
-
-/* ─── Pricing ─── */
-.p-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.p-card{
-  background:#fff;border:1px solid var(--2);border-radius:12px;padding:36px 28px;
-  position:relative;transition:all .2s;
-}
-.p-card.dark{background:var(--8);color:var(--0);border-color:transparent}
-.p-card.dark:hover{box-shadow:0 8px 32px rgba(15,19,25,.3)}
-
-.p-card:hover{border-color:var(--b);box-shadow:0 4px 20px rgba(59,127,255,.08)}
-
-.p-type{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--4);margin-bottom:24px}
-.p-card.dark .p-type{color:rgba(255,255,255,.3)}
-
-.p-price{font-family:var(--h);font-size:40px;font-weight:700;letter-spacing:-.02em;margin-bottom:6px}
-.p-card.dark .p-price{color:#fff}
-
-.p-note{font-size:13px;color:var(--4);margin-bottom:24px}
-.p-card.dark .p-note{color:rgba(255,255,255,.3)}
-
-.p-hr{height:1px;background:var(--2);margin-bottom:24px}
-.p-card.dark .p-hr{background:rgba(255,255,255,.08)}
-
-.p-ul{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
-.p-ul li{font-size:14px;color:var(--5);display:flex;gap:8px}
-.p-card.dark .p-ul li{color:rgba(255,255,255,.5)}
-.p-ul li::before{content:'';width:5px;height:5px;background:var(--b);border-radius:50%;flex-shrink:0;margin-top:6px}
-.p-card.dark .p-ul li::before{background:var(--b2)}
-
-.p-btn{
-  display:block;text-align:center;font-size:14px;font-weight:600;
-  padding:12px;border-radius:6px;text-decoration:none;transition:all .2s;cursor:pointer;border:none;
-}
-.p-out{background:transparent;border:1px solid var(--2);color:var(--8)}
-.p-out:hover{border-color:var(--8)}
-.p-w{background:#fff;color:var(--8)}
-.p-w:hover{background:var(--1)}
+/* ─── FAQ ─── */
+.faq-list{display:flex;flex-direction:column;gap:1px}
+.faq-item{background:#fff;border:1px solid var(--2);border-radius:8px;padding:20px 24px}
+.faq-q{font-family:var(--h);font-size:16px;font-weight:600;color:var(--8);margin-bottom:6px}
+.faq-a{font-size:14px;color:var(--5);line-height:1.7}
 
 /* ─── CTA ─── */
-.end{padding:88px 0 100px;position:relative;overflow:hidden}
+.end{padding:88px 0 100px;position:relative;overflow:hidden;text-align:center}
 .end::before{
   content:'';position:absolute;inset:0;
   background-image:linear-gradient(var(--1) 1px,transparent 1px),linear-gradient(90deg,var(--1) 1px,transparent 1px);
-  background-size:60px 60px;opacity:.35;pointer-events:none;
+  background-size:48px 48px;opacity:.35;pointer-events:none;
 }
-.end::after{
-  content:'';position:absolute;top:-200px;left:30%;width:500px;height:500px;
-  background:radial-gradient(circle,rgba(59,127,255,.1) 0%,transparent 60%);pointer-events:none;
-}
+.end-inner{position:relative;max-width:640px;margin:0 auto}
+.end-inner h2{font-family:var(--h);font-size:clamp(34px,5vw,48px);font-weight:800;letter-spacing:-.02em;line-height:1.1;margin-bottom:20px}
+.end-inner h2 .accent{color:var(--r)}
+.end-inner p{font-size:16px;color:var(--5);line-height:1.7;margin-bottom:36px}
 
-.end-grid{
-  position:relative;display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:center;
-}
-
-.end-left h2{font-family:var(--h);font-size:clamp(36px,5vw,52px);font-weight:800;letter-spacing:-.02em;line-height:1.08;margin-bottom:24px}
-.end-left h2 .b{color:var(--b)}
-.end-left p{font-size:16px;color:var(--5);line-height:1.7;margin-bottom:40px;max-width:42ch}
-
-.end-right{display:flex;flex-direction:column;gap:14px}
-.e-card{padding:18px 22px;background:#fff;border:1px solid var(--2);border-radius:8px}
-.e-lbl{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--4);margin-bottom:4px}
-.e-val{font-size:15px;font-weight:500;color:var(--8)}
-
-/* ─── Footer ─── */
+/* ─── FOOTER ─── */
 footer{padding:24px 0;border-top:1px solid var(--2)}
-.ft{display:flex;align-items:center;justify-content:space-between}
+.ft{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
 .ft-brand{font-family:var(--h);font-size:18px;font-weight:700;color:var(--8)}
-.ft-brand .b{color:var(--b)}
+.ft-brand .dot{color:var(--r)}
 .ft-copy{font-size:13px;color:var(--4)}
 
 /* ─── Responsive ─── */
 @media(max-width:900px){
   .hero-inner{grid-template-columns:1fr;gap:48px}
   .f-grid{grid-template-columns:1fr 1fr}
-  .m-layout,.c-layout{grid-template-columns:1fr}
   .p-grid{grid-template-columns:1fr}
-  .end-grid{grid-template-columns:1fr}
+  .m-grid{grid-template-columns:1fr}
 }
 @media(max-width:640px){
   .x{padding:0 20px}
-  .hero{padding:72px 0 56px}
-  .hero h1{font-size:40px}
+  .hero{padding:60px 0 48px}
+  .hero h1{font-size:34px}
+  .hero h2.sub{font-size:16px}
   .f-grid{grid-template-columns:1fr}
   .sec{padding:56px 0}
-  .sec-head{gap:20px;flex-direction:column}
-  .ribbon-row{flex-wrap:wrap;justify-content:center}
-  .r-sep{display:none}
+  .sec-header{flex-direction:column;gap:8px;margin-bottom:36px}
+  .ribbon-inner{gap:4px 12px}
 }
 
-/* ─── Vis ─── */
-.v{opacity:0;transform:translateY(10px);transition:all .5s cubic-bezier(.16,1,.3,1)}
+/* ─── Scroll reveal ─── */
+.v{opacity:0;transform:translateY(12px);transition:all .5s cubic-bezier(.16,1,.3,1)}
 .v.on{opacity:1;transform:translateY(0)}
 </style>
 </head>
 <body>
 
-<!-- ─── HERO ─── -->
+<!-- ═══════ HERO ═══════ -->
 <section class="hero">
   <div class="x">
     <div class="hero-inner">
       <div>
-        <div class="h-badge">
-          <span class="h-dot"></span>
-          All Systems Operational &middot; 99.9% Uptime
+        <div class="h-badge"><span class="h-dot"></span>Live & Operational · All Models Available</div>
+        <div>
+          <span class="h-tag">⚡ 90% OFF SALE</span>
+          <span class="h-tag h-tag-2">1折大促 / 一折GPT</span>
         </div>
-        <div class="h-tag">AI API Gateway</div>
-        <h1>Enterprise<br><span class="b">AI Gateway</span></h1>
+        <h1>Cheap GPT API — <span class="accent">90% OFF</span></h1>
+        <h2 class="sub">ChatGPT API · Claude API · Gemini API — All at <strong>1/10 the Price</strong>. 50+ AI Models, One API Key, OpenAI Compatible.</h2>
         <p class="hero-desc">
-          AIwts.com provides high-stability, low-latency AI API gateway services for enterprises and developers. Access the world's latest large language models through a single OpenAI-compatible API. 90% OFF official pricing.
+          Stop overpaying for AI. Get the <strong>cheapest GPT API</strong> online — ChatGPT, Claude Opus 4, GPT-4.1, and Gemini 2.5 Pro — at a <strong>90% discount</strong> from official pricing. Same models, same quality, 1/10 the cost. Whether you need a cheap ChatGPT alternative or a full discount Claude API setup, AIwts delivers.
         </p>
         <div class="hero-btns">
-          <a href="https://www.aiwts.com" class="btn btn-b">Get Started Free</a>
-          <a href="https://docs.aiwts.com" class="btn btn-g">Documentation</a>
+          <a href="https://www.aiwts.com" class="btn btn-r">Try Free · 90% OFF GPT Now</a>
+          <a href="#compare" class="btn btn-g">See Price Comparison ↓</a>
         </div>
       </div>
 
-      <div class="metrics">
-        <div class="m-row">
-          <div class="m-v">50+</div>
-          <div class="m-l">Models Available</div>
-        </div>
-        <div class="m-row">
-          <div class="m-v">&lt;80ms</div>
-          <div class="m-l">Avg Latency</div>
-        </div>
-        <div class="m-row">
-          <div class="m-v">99.9%</div>
-          <div class="m-l">Uptime SLA</div>
-        </div>
-        <div class="m-row">
-          <div class="m-v">24/7</div>
-          <div class="m-l">Support</div>
-        </div>
-        <div class="m-status">
-          <span class="h-dot" style="width:5px;height:5px"></span>
-          All Nodes Healthy
-        </div>
+      <div class="panel">
+        <div class="p-row"><div class="p-v sm">save 90%</div><div class="p-l">vs. official pricing</div></div>
+        <div class="p-row"><div class="p-v">50+</div><div class="p-l">AI models available</div></div>
+        <div class="p-row"><div class="p-v">&lt;80ms</div><div class="p-l">avg. latency</div></div>
+        <div class="p-row"><div class="p-v">99.9%</div><div class="p-l">uptime SLA</div></div>
+        <div class="p-note"><span class="h-dot" style="width:5px;height:5px"></span>OpenAI Compatible</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ─── RIBBON ─── -->
+<!-- ═══════ PROVIDER BAR ═══════ -->
 <div class="ribbon">
   <div class="x">
-    <div class="ribbon-row">
-      <span class="r-name">OpenAI</span>
-      <span class="r-sep"></span>
-      <span class="r-name">Anthropic</span>
-      <span class="r-sep"></span>
-      <span class="r-name">Google</span>
-      <span class="r-sep"></span>
-      <span class="r-name">DeepSeek</span>
-      <span class="r-sep"></span>
-      <span class="r-name">Qwen</span>
-      <span class="r-sep"></span>
-      <span class="r-name">Mistral</span>
+    <div class="ribbon-inner">
+      <span class="r-hl">OpenAI</span>
+      <span>Anthropic</span>
+      <span class="r-hl">Claude</span>
+      <span>Gemini</span>
+      <span>DeepSeek</span>
+      <span>Qwen</span>
+      <span>Mistral</span>
+      <span>Llama</span>
+      <span>+40 more</span>
     </div>
   </div>
 </div>
 
-<!-- ─── FEATURES ─── -->
-<section class="sec v" id="features">
+<!-- ═══════ WHY 90% OFF ═══════ -->
+<section class="sec v" id="why">
   <div class="x">
-    <div class="sec-head">
+    <div class="sec-header">
       <span class="sec-n">01</span>
-      <h2 class="sec-t">AI Infrastructure Built for <span class="b">Enterprise</span></h2>
+      <h2 class="sec-h2">Why Pay Full Price? Get the <span class="hl">Cheapest GPT API</span> Online</h2>
     </div>
     <div class="f-grid">
       <div class="f-card">
-        <div class="f-lbl">Protocol Compatible</div>
-        <h3 class="f-title">Full OpenAI API Compatibility</h3>
-        <p class="f-body">Just swap the base URL. Supports Chat Completions, Embeddings, Functions, and all endpoints. Zero migration effort.</p>
+        <span class="f-icon">💸</span>
+        <h3 class="f-title">90% OFF ChatGPT API</h3>
+        <p class="f-body">GPT-4.1 that costs $15/M tokens officially is ~$1.50 through us. GPT-5.1, o4-mini, every OpenAI model gets the same deep discount with zero quality compromise.</p>
       </div>
       <div class="f-card">
-        <div class="f-lbl">Smart Routing</div>
+        <span class="f-icon">🔌</span>
+        <h3 class="f-title">Drop-in OpenAI Compatible</h3>
+        <p class="f-body">Your existing code works instantly. Change one line — the <code>base_url</code> — and you're paying 90% less. Zero migration, zero refactoring.</p>
+      </div>
+      <div class="f-card">
+        <span class="f-icon">🤖</span>
+        <h3 class="f-title">Discount Claude API Included</h3>
+        <p class="f-body">Claude Opus 4, Claude Sonnet 4, and Claude Haiku 3.5 — all available at 90% OFF Anthropic's official pricing. Same Claude quality, dramatically cheaper.</p>
+      </div>
+      <div class="f-card">
+        <span class="f-icon">🌐</span>
         <h3 class="f-title">Global Low-Latency Network</h3>
-        <p class="f-body">Multi-node deployment with automatic optimal path selection. Elastic scaling during peak loads. Average response under 80ms.</p>
+        <p class="f-body">Multi-region deployment ensures &lt;80ms average response. Your cheap GPT API stays fast whether you're in San Francisco, London, or Singapore.</p>
       </div>
       <div class="f-card">
-        <div class="f-lbl">Failover</div>
-        <h3 class="f-title">Automatic Failover, Zero Downtime</h3>
-        <p class="f-body">Automatic node failover, multi-key round-robin scheduling, smooth high-concurrency handling. 24/7 stable operation.</p>
+        <span class="f-icon">🛡️</span>
+        <h3 class="f-title">Enterprise-Grade Reliability</h3>
+        <p class="f-body">99.9% uptime SLA, automatic failover, 24/7 support. Cheap doesn't mean flaky — our infrastructure serves millions of requests daily.</p>
       </div>
       <div class="f-card">
-        <div class="f-lbl">Security</div>
-        <h3 class="f-title">Enterprise-Grade Security</h3>
-        <p class="f-body">End-to-end HTTPS encryption, API Key isolation, fine-grained access control. Meets compliance requirements.</p>
-      </div>
-      <div class="f-card">
-        <div class="f-lbl">Monitoring</div>
-        <h3 class="f-title">Full Usage Transparency</h3>
-        <p class="f-body">Per-call logs, token usage dashboard, cost visualization. Complete visibility into your AI usage.</p>
-      </div>
-      <div class="f-card">
-        <div class="f-lbl">Pay-as-you-go</div>
-        <h3 class="f-title">Transparent Pricing, 90% OFF</h3>
-        <p class="f-body">No monthly fees, no commitments. Pay only for what you use. Up to 90% OFF compared to official pricing.</p>
+        <span class="f-icon">📊</span>
+        <h3 class="f-title">Pay Only What You Use</h3>
+        <p class="f-body">No monthly commitments, no hidden fees. Transparent token-based billing at 90% OFF. Start free, scale infinitely, pay pennies per request.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ─── MODELS ─── -->
+<!-- ═══════ PRICE COMPARISON ═══════ -->
+<section class="sec v" id="compare">
+  <div class="x">
+    <div class="sec-header">
+      <span class="sec-n">02</span>
+      <h2 class="sec-h2">ChatGPT API <span class="hl">90% OFF</span> — Real Price Comparison</h2>
+    </div>
+
+    <div class="p-grid">
+      <div class="p-card">
+        <div class="p-name">Official OpenAI</div>
+        <div class="p-price">$15.00</div>
+        <div class="p-desc">per 1M input tokens (GPT-4.1)</div>
+        <div class="p-line"></div>
+        <ul class="p-features">
+          <li>GPT-4.1 · GPT-4.1 mini</li>
+          <li>Official endpoint access</li>
+          <li>Pay-as-you-go</li>
+        </ul>
+        <span class="p-btn p-btn-out" style="opacity:.5">Full Retail Price</span>
+      </div>
+
+      <div class="p-card featured">
+        <div class="p-badge">BEST VALUE</div>
+        <div class="p-name">AIwts · Cheap GPT API</div>
+        <div class="p-price">~$1.50</div>
+        <div class="p-desc">per 1M input tokens · 90% OFF</div>
+        <div class="p-line"></div>
+        <ul class="p-features">
+          <li>GPT-4.1 · GPT-5.1 · o4-mini</li>
+          <li>Claude Opus 4 · Claude Sonnet 4</li>
+          <li>Gemini 2.5 Pro · Flash</li>
+          <li>DeepSeek V4 · R1 · Qwen 3.7</li>
+          <li>50+ more AI models — all 90% OFF</li>
+        </ul>
+        <a href="https://www.aiwts.com" class="p-btn p-btn-white">Start Saving 90% →</a>
+      </div>
+
+      <div class="p-card">
+        <div class="p-name">Official Anthropic</div>
+        <div class="p-price">$15.00</div>
+        <div class="p-desc">per 1M input tokens (Claude Opus 4)</div>
+        <div class="p-line"></div>
+        <ul class="p-features">
+          <li>Claude Opus 4 · Sonnet 4</li>
+          <li>Claude Haiku 3.5</li>
+          <li>Official endpoint access</li>
+        </ul>
+        <span class="p-btn p-btn-out" style="opacity:.5">Full Retail Price</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ MODELS ═══════ -->
 <section class="sec v" id="models">
   <div class="x">
-    <div class="m-layout">
-      <div class="m-side">
-        <span class="sec-n">02</span>
-        <h2 class="sec-t" style="font-size:clamp(26px,3.4vw,36px)">Access the Latest <span class="b">LLMs</span></h2>
-        <p>We track new model releases and make them available immediately. One API key for the world's top AI models.</p>
-      </div>
+    <div class="sec-header">
+      <span class="sec-n">03</span>
+      <h2 class="sec-h2">Discount <span class="hl">Claude API</span> · Cheap GPT · All Models at 90% OFF</h2>
+    </div>
 
-      <table class="tbl">
-        <thead><tr><th>Model</th><th>Provider</th><th></th></tr></thead>
-        <tbody>
-          <tr><td class="tbl-m">gpt-4.1</td><td class="tbl-p">OpenAI</td><td><span class="tbl-b bh">Hot</span></td></tr>
-          <tr><td class="tbl-m">gpt-5.1</td><td class="tbl-p">OpenAI</td><td><span class="tbl-b bn">New</span></td></tr>
-          <tr><td class="tbl-m">o4-mini</td><td class="tbl-p">OpenAI</td><td><span class="tbl-b bf">Fast</span></td></tr>
-          <tr><td class="tbl-m">claude-opus-4</td><td class="tbl-p">Anthropic</td><td><span class="tbl-b bh">Hot</span></td></tr>
-          <tr><td class="tbl-m">claude-sonnet-4</td><td class="tbl-p">Anthropic</td><td><span class="tbl-b bf">Fast</span></td></tr>
-          <tr><td class="tbl-m">gemini-2.5-pro</td><td class="tbl-p">Google</td><td><span class="tbl-b bh">Hot</span></td></tr>
-          <tr><td class="tbl-m">gemini-2.5-flash</td><td class="tbl-p">Google</td><td><span class="tbl-b bf">Fast</span></td></tr>
-          <tr><td class="tbl-m">deepseek-v4</td><td class="tbl-p">DeepSeek</td><td><span class="tbl-b bn">New</span></td></tr>
-          <tr><td class="tbl-m">deepseek-r1</td><td class="tbl-p">DeepSeek</td><td><span class="tbl-b bh">Reasoning</span></td></tr>
-          <tr><td class="tbl-m">qwen3.7-max</td><td class="tbl-p">Alibaba</td><td><span class="tbl-b bn">New</span></td></tr>
-          <tr><td class="tbl-m">mistral-large-3</td><td class="tbl-p">Mistral</td><td><span class="tbl-b bn">New</span></td></tr>
-          <tr><td class="tbl-m">llama-4-maverick</td><td class="tbl-p">Meta</td><td><span class="tbl-b bf">Open Source</span></td></tr>
-        </tbody>
-      </table>
+    <div class="m-grid">
+      <!-- OpenAI -->
+      <div class="m-block">
+        <h3><span class="ico">🧠</span> Cheap GPT / ChatGPT API</h3>
+        <div class="m-row-item"><span class="m-model">gpt-5.1</span><span class="m-tag m-tag-new">New</span><div><span class="m-price">90% OFF <span class="off">save</span></span></div></div>
+        <div class="m-row-item"><span class="m-model">gpt-4.1</span><span class="m-tag m-tag-hot">Hot</span><div><span class="m-price">90% OFF <span class="off">save</span></span></div></div>
+        <div class="m-row-item"><span class="m-model">gpt-4.1-mini</span><span class="m-tag m-tag-fast">Fast</span><div><span class="m-price">90% OFF <span class="off">save</span></span></div></div>
+        <div class="m-row-item"><span class="m-model">o4-mini</span><span class="m-tag m-tag-fast">Reasoning</span><div><span class="m-price">90% OFF <span class="off">save</span></span></div></div>
+        <div class="m-row-item"><span class="m-model">o1-preview</span><div><span class="m-price">90% OFF <span class="off">save</span></span></div></div>
+      </div>
+      <!-- Anthropic -->
+      <div class="m-block">
+        <h3><span class="ico">🧬</span> Discount Claude API</h3>
+        <div class="m-row-item"><span class="m-model">claude-opus-4</span><span class="m-tag m-tag-hot">Best</span><div><span class="m-price">90% OFF <span class="off">save</span></span></div></div>
+        <div class="m-row-item"><span class="m-model">claude-sonnet-4</span><span class="m-tag m-tag-fast">Fast</span><div><span class="m-price">90% OFF <span class="off">save</span></span></div></div>
+        <div class="m-row-item"><span class="m-model">claude-haiku-3.5</span><span class="m-tag m-tag-fast">Value</span><div><span class="m-price">90% OFF <span class="off">save</span></span></div></div>
+      </div>
+      <!-- Google -->
+      <div class="m-block">
+        <h3><span class="ico">🌐</span> Cheap Gemini API</h3>
+        <div class="m-row-item"><span class="m-model">gemini-2.5-pro</span><span class="m-tag m-tag-hot">Hot</span><div><span class="m-price">90% OFF <span class="off">save</span></span></div></div>
+        <div class="m-row-item"><span class="m-model">gemini-2.5-flash</span><span class="m-tag m-tag-fast">Fast</span><div><span class="m-price">90% OFF <span class="off">save</span></span></div></div>
+      </div>
+      <!-- Others -->
+      <div class="m-block">
+        <h3><span class="ico">⚡</span> More Discount Models</h3>
+        <div class="m-row-item"><span class="m-model">deepseek-v4</span><span class="m-tag m-tag-new">New</span><div><span class="m-price">90% OFF <span class="off">save</span></span></div></div>
+        <div class="m-row-item"><span class="m-model">deepseek-r1</span><span class="m-tag m-tag-hot">Reasoning</span><div><span class="m-price">90% OFF <span class="off">save</span></span></div></div>
+        <div class="m-row-item"><span class="m-model">qwen3.7-max</span><span class="m-tag m-tag-new">New</span><div><span class="m-price">90% OFF <span class="off">save</span></span></div></div>
+        <div class="m-row-item"><span class="m-model">mistral-large-3</span><div><span class="m-price">90% OFF <span class="off">save</span></span></div></div>
+        <div class="m-row-item"><span class="m-model">llama-4-maverick</span><span class="m-tag m-tag-fast">Open Source</span><div><span class="m-price">90% OFF <span class="off">save</span></span></div></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ─── CODE ─── -->
-<section class="sec v" id="docs">
+<!-- ═══════ CODE ═══════ -->
+<section class="sec v" id="code">
   <div class="x">
-    <div class="c-layout">
-      <div class="c-side">
-        <span class="sec-n">03</span>
-        <h2><span class="b">3 Lines of Code</span><br>to Get Started</h2>
-        <p>Fully compatible with OpenAI SDK. Just change the base_url. Zero learning curve.</p>
+    <div class="sec-header">
+      <span class="sec-n">04</span>
+      <h2 class="sec-h2">3 Lines to <span class="hl">Cheap GPT</span>. Zero Migration.</h2>
+    </div>
+
+    <div class="c-box">
+      <div class="c-bar">
+        <span class="c-d c-d1"></span><span class="c-d c-d2"></span><span class="c-d c-d3"></span>
+        <span class="c-fn">cheap-gpt-quickstart.py</span>
       </div>
+      <div class="c-tabs">
+        <button class="ct on" data-l="py">Python</button>
+        <button class="ct" data-l="js">Node.js</button>
+        <button class="ct" data-l="curl">cURL</button>
+      </div>
+      <pre id="cp"><span class="kw">from</span> openai <span class="kw">import</span> <span class="fn">OpenAI</span>
 
-      <div class="c-box">
-        <div class="c-bar">
-          <span class="c-d c-d1"></span><span class="c-d c-d2"></span><span class="c-d c-d3"></span>
-          <span class="c-fn">quickstart.py</span>
-        </div>
-        <div class="c-tabs">
-          <button class="ct on" data-l="py">Python</button>
-          <button class="ct" data-l="js">Node.js</button>
-          <button class="ct" data-l="curl">cURL</button>
-        </div>
-        <pre id="cp"><span class="kw">from</span> openai <span class="kw">import</span> <span class="fn">OpenAI</span>
-
-<span class="cm"># Just change base_url</span>
+<span class="cm"># Swap base_url — save 90% instantly</span>
 client <span class="op">=</span> <span class="fn">OpenAI</span>(
     api_key<span class="op">=</span><span class="st">"sk-your-aiwts-key"</span>,
     base_url<span class="op">=</span><span class="st">"https://api.aiwts.com/v1"</span>
 )
 
+<span class="cm"># Use any model — GPT, Claude, Gemini</span>
 response <span class="op">=</span> client.chat.completions.<span class="fn">create</span>(
-    model<span class="op">=</span><span class="st">"gpt-4.1"</span>,
+    model<span class="op">=</span><span class="st">"gpt-4.1"</span>,  <span class="cm"># or claude-sonnet-4</span>
     messages<span class="op">=</span>[{<span class="st">"role"</span><span class="op">:</span> <span class="st">"user"</span>, <span class="st">"content"</span><span class="op">:</span> <span class="st">"Hello"</span>}]
 )
 
 <span class="fn">print</span>(response.choices[<span class="nm">0</span>].message.content)</pre>
-      </div>
     </div>
   </div>
 </section>
 
-<!-- ─── PRICING ─── -->
-<section class="sec v" id="pricing">
+<!-- ═══════ FAQ ═══════ -->
+<section class="sec v" id="faq">
   <div class="x">
-    <div class="sec-head">
-      <span class="sec-n">04</span>
-      <h2 class="sec-t">Transparent <span class="b">Pay-as-you-go</span> Pricing</h2>
+    <div class="sec-header">
+      <span class="sec-n">05</span>
+      <h2 class="sec-h2">Cheapest GPT API · <span class="hl">FAQ</span></h2>
     </div>
 
-    <div class="p-grid">
-      <div class="p-card">
-        <div class="p-type">Free Tier</div>
-        <div class="p-price">Free</div>
-        <div class="p-note">Sign up to start</div>
-        <div class="p-hr"></div>
-        <ul class="p-ul">
-          <li>Daily usage quota</li>
-          <li>GPT-4.1 mini / Llama models</li>
-          <li>Basic usage stats</li>
-          <li>Community support</li>
-        </ul>
-        <a href="https://www.aiwts.com" class="p-btn p-out">Sign Up Free</a>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">Is this really the cheapest GPT API available?</div>
+        <div class="faq-a">Yes. AIwts offers ChatGPT, Claude, and Gemini API access at up to 90% OFF official pricing — making it the cheapest GPT API gateway on the market. For example, GPT-4.1 costs $15/M tokens officially; through AIwts it's ~$1.50. Same models, same quality, dramatically lower cost.</div>
       </div>
-
-      <div class="p-card dark">
-        <div class="p-type">Pro</div>
-        <div class="p-price">Pay-as-you-go</div>
-        <div class="p-note">No monthly fees &middot; 90% OFF</div>
-        <div class="p-hr"></div>
-        <ul class="p-ul">
-          <li>Full model access</li>
-          <li>No concurrency limits</li>
-          <li>Real-time logs & monitoring</li>
-          <li>Multi-key management</li>
-          <li>Priority support</li>
-          <li>VAT invoices available</li>
-        </ul>
-        <a href="https://www.aiwts.com" class="p-btn p-w">Get Started</a>
+      <div class="faq-item">
+        <div class="faq-q">Do I get the real ChatGPT and Claude models with the discount?</div>
+        <div class="faq-a">Absolutely. You get the identical GPT-4.1, Claude Opus 4, and Gemini 2.5 Pro models — same intelligence, same outputs. The discount comes from enterprise-volume sourcing, not from using inferior alternatives.</div>
       </div>
-
-      <div class="p-card">
-        <div class="p-type">Enterprise</div>
-        <div class="p-price">Custom</div>
-        <div class="p-note">Contact sales</div>
-        <div class="p-hr"></div>
-        <ul class="p-ul">
-          <li>Dedicated cluster deployment</li>
-          <li>On-premise data storage</li>
-          <li>SLA guarantee</li>
-          <li>Custom feature development</li>
-          <li>Dedicated account manager</li>
-        </ul>
-        <a href="mailto:business@aiwts.com" class="p-btn p-out">Contact Sales</a>
+      <div class="faq-item">
+        <div class="faq-q">How does the Claude API discount compare to Anthropic pricing?</div>
+        <div class="faq-a">Claude Opus 4 at official Anthropic pricing is $15/M input tokens. Through AIwts, it's 90% OFF — approximately $1.50/M tokens. Claude Sonnet 4 and Claude Haiku 3.5 get the same deep discount.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is it safe to use a cheap GPT API gateway?</div>
+        <div class="faq-a">Yes. AIwts uses end-to-end HTTPS encryption, isolated API keys, and enterprise-grade infrastructure. Our 99.9% uptime SLA and 24/7 support ensure your cheap GPT API access stays reliable and secure.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ─── CTA ─── -->
-<section class="end v" id="start">
+<!-- ═══════ CTA ═══════ -->
+<section class="end v">
   <div class="x">
-    <div class="end-grid">
-      <div class="end-left">
-        <h2>Start Building with <span class="b">AIwts</span> Today</h2>
-        <p>Sign up for free credits. Get set up in 5 minutes. Experience enterprise-grade AI API gateway service at 90% OFF.</p>
-        <div class="hero-btns">
-          <a href="https://www.aiwts.com" class="btn btn-b">Sign Up Free</a>
-          <a href="mailto:business@aiwts.com" class="btn btn-g">Contact Us</a>
-        </div>
-      </div>
-      <div class="end-right">
-        <div class="e-card"><div class="e-lbl">Documentation</div><div class="e-val">docs.aiwts.com</div></div>
-        <div class="e-card"><div class="e-lbl">Business Inquiries</div><div class="e-val">business@aiwts.com</div></div>
-        <div class="e-card"><div class="e-lbl">Technical Support</div><div class="e-val">24/7 Online Support</div></div>
+    <div class="end-inner">
+      <h2>Ready for the <span class="accent">Cheapest GPT API</span>?</h2>
+      <p>Join thousands of developers saving 90% on ChatGPT, Claude, and Gemini API access. One key, 50+ models, instant setup. Your wallet will thank you.</p>
+      <div class="hero-btns" style="justify-content:center">
+        <a href="https://www.aiwts.com" class="btn btn-r">Get 90% OFF GPT Now</a>
+        <a href="mailto:business@aiwts.com" class="btn btn-g">Enterprise Inquiries</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ─── FOOTER ─── -->
+<!-- ═══════ FOOTER ═══════ -->
 <footer>
   <div class="x">
     <div class="ft">
-      <div class="ft-brand">AI<span class="b">wts</span>.com</div>
-      <div class="ft-copy">&copy; 2024 AIwts.com &middot; Enterprise AI API Gateway</div>
+      <div class="ft-brand">AI<span class="dot">wts</span>.com</div>
+      <div class="ft-copy">&copy; 2024 AIwts.com · Cheap GPT API Gateway · 90% OFF ChatGPT, Claude & Gemini</div>
     </div>
   </div>
 </footer>
 
 <script>
 const S={
-  py:`<span class="kw">from</span> openai <span class="kw">import</span> <span class="fn">OpenAI</span>\n\n<span class="cm"># Just change base_url</span>\nclient <span class="op">=</span> <span class="fn">OpenAI</span>(\n    api_key<span class="op">=</span><span class="st">"sk-your-aiwts-key"</span>,\n    base_url<span class="op">=</span><span class="st">"https://api.aiwts.com/v1"</span>\n)\n\nresponse <span class="op">=</span> client.chat.completions.<span class="fn">create</span>(\n    model<span class="op">=</span><span class="st">"gpt-4.1"</span>,\n    messages<span class="op">=</span>[{<span class="st">"role"</span><span class="op">:</span> <span class="st">"user"</span>, <span class="st">"content"</span><span class="op">:</span> <span class="st">"Hello"</span>}]\n)\n\n<span class="fn">print</span>(response.choices[<span class="nm">0</span>].message.content)`,
-  js:`<span class="kw">import</span> OpenAI <span class="kw">from</span> <span class="st">'openai'</span>;\n\n<span class="cm">// Just change baseURL</span>\n<span class="kw">const</span> client <span class="op">=</span> <span class="kw">new</span> <span class="fn">OpenAI</span>({\n  apiKey: <span class="st">'sk-your-aiwts-key'</span>,\n  baseURL: <span class="st">'https://api.aiwts.com/v1'</span>\n});\n\n<span class="kw">const</span> res <span class="op">=</span> <span class="kw">await</span> client.chat.completions.<span class="fn">create</span>(\n  { model: <span class="st">'gpt-4.1'</span>,\n    messages: [{ role: <span class="st">'user'</span>, content: <span class="st">'Hello'</span> }] }\n);\n\nconsole.<span class="fn">log</span>(res.choices[<span class="nm">0</span>].message.content);`,
+  py:`<span class="kw">from</span> openai <span class="kw">import</span> <span class="fn">OpenAI</span>\n\n<span class="cm"># Swap base_url — save 90% instantly</span>\nclient <span class="op">=</span> <span class="fn">OpenAI</span>(\n    api_key<span class="op">=</span><span class="st">"sk-your-aiwts-key"</span>,\n    base_url<span class="op">=</span><span class="st">"https://api.aiwts.com/v1"</span>\n)\n\n<span class="cm"># Use any model — GPT, Claude, Gemini</span>\nresponse <span class="op">=</span> client.chat.completions.<span class="fn">create</span>(\n    model<span class="op">=</span><span class="st">"gpt-4.1"</span>,  <span class="cm"># or claude-sonnet-4</span>\n    messages<span class="op">=</span>[{<span class="st">"role"</span><span class="op">:</span> <span class="st">"user"</span>, <span class="st">"content"</span><span class="op">:</span> <span class="st">"Hello"</span>}]\n)\n\n<span class="fn">print</span>(response.choices[<span class="nm">0</span>].message.content)`,
+  js:`<span class="kw">import</span> OpenAI <span class="kw">from</span> <span class="st">'openai'</span>;\n\n<span class="cm">// Swap baseURL — save 90% instantly</span>\n<span class="kw">const</span> client <span class="op">=</span> <span class="kw">new</span> <span class="fn">OpenAI</span>({\n  apiKey: <span class="st">'sk-your-aiwts-key'</span>,\n  baseURL: <span class="st">'https://api.aiwts.com/v1'</span>\n});\n\n<span class="cm">// Any model — GPT, Claude, Gemini</span>\n<span class="kw">const</span> res <span class="op">=</span> <span class="kw">await</span> client.chat.completions.<span class="fn">create</span>({\n  model: <span class="st">'gpt-4.1'</span>,  <span class="cm">// or claude-sonnet-4</span>\n  messages: [{ role: <span class="st">'user'</span>, content: <span class="st">'Hello'</span> }]\n});\n\nconsole.<span class="fn">log</span>(res.choices[<span class="nm">0</span>].message.content);`,
   curl:`<span class="fn">curl</span> https://api.aiwts.com/v1/chat/completions \\\\\n  <span class="op">-H</span> <span class="st">"Content-Type: application/json"</span> \\\\\n  <span class="op">-H</span> <span class="st">"Authorization: Bearer sk-your-aiwts-key"</span> \\\\\n  <span class="op">-d</span> <span class="st">'{</span>\n    <span class="st">"model": "gpt-4.1"</span>,\n    <span class="st">"messages": [{"role": "user", "content": "Hello"}]</span>\n  <span class="st">}'</span>`
 };
-
-document.querySelectorAll('.ct').forEach(b=>{
-  b.addEventListener('click',()=>{
-    document.querySelectorAll('.ct').forEach(t=>t.classList.remove('on'));
-    b.classList.add('on');
-    document.getElementById('cp').innerHTML=S[b.dataset.l];
-  });
-});
-
-const io=new IntersectionObserver(e=>{
-  e.forEach(el=>{
-    if(el.isIntersecting){el.classList.add('on');io.unobserve(el)}
-  });
-},{threshold:.06});
+document.querySelectorAll('.ct').forEach(b=>{b.addEventListener('click',()=>{document.querySelectorAll('.ct').forEach(t=>t.classList.remove('on'));b.classList.add('on');document.getElementById('cp').innerHTML=S[b.dataset.l]})});
+const io=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.classList.add('on');io.unobserve(el)}})},{threshold:.06});
 document.querySelectorAll('.v').forEach(el=>io.observe(el));
 </script>
 </body>
